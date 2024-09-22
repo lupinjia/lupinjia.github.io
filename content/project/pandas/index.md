@@ -1,13 +1,12 @@
 ---
-title: Pandas
-date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
+title: RoboStack
+date: 2024-09-22
+external_link: https://lupinjia.github.io/RoboStack/
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - Site Nav
+  - Tools
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+A website navigation page based on [adminlte](https://github.com/ColorlibHQ/AdminLTE), adopting the style from [WebStack](https://webstack.cc/cn/index.html). It incorporates websites on Robotics and some frequently-used tools.
 
 <!--more-->
