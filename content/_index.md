@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: ubw.jpg
+          filename: gradient_background.jpg
           filters:
             brightness: 0.8
           size: cover
