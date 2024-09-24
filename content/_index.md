@@ -26,39 +26,27 @@ sections:
           # Add your image background to `assets/media/`.
           filename: gradient_background.jpg
           filters:
-            brightness: 0.8
+            brightness: 1.0
           size: cover
           position: center
           parallax: false
-  - block: collection
+  - block: Markdown
     id: news
     content:
-      title: Recent News
+      title: News
       subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: post
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+      text: |-
+      {{< spoiler text="2024" >}}
+        {{< spoiler text="July 3: Awarded as Outstanding Graduate of Beijing" >}}
+          ![Outstanding Graduate of Beijing](../assets/img/Outstanding%20Graduate%20of%20Beijing.png)
+        {{</spoiler >}}
+      {{</spoiler >}}
+      {{< spoiler text="2022">}}
+      {{</spoiler >}}
     design:
-      # Choose a layout view
-      view: date-title-summary
       # Reduce spacing
       spacing:
-        padding: [0, 0, 0, 0]
+        padding: ['20px', 0, 0, 0]
   - block: collection
     id: papers
     content:
