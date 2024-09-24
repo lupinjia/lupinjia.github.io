@@ -37,9 +37,8 @@ sections:
       subtitle: ''
       text: |-
       {{< spoiler text="2024" >}}
-        {{< spoiler text="July 3: Awarded as Outstanding Graduate of Beijing" >}}
-          ![Outstanding Graduate of Beijing](../assets/img/Outstanding_Graduate_of_Beijing.png)
-        {{</spoiler >}}
+      July 3: Awarded as Outstanding Graduate of Beijing"
+      ![Outstanding Graduate of Beijing](Outstanding_Graduate_of_Beijing.jpg)
       {{</spoiler >}}
       {{< spoiler text="2022">}}
       {{</spoiler >}}
