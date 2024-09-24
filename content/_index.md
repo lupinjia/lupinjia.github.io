@@ -21,31 +21,31 @@ sections:
     design:
       css_class: dark
       background:
-        color: black
+        color: dark
         image:
           # Add your image background to `assets/media/`.
           filename: gradient_background.jpg
           filters:
-            brightness: 1.0
+            brightness: 0.6
           size: cover
           position: center
           parallax: false
-  - block: Markdown
+  - block: hero
     id: news
     content:
       title: News
       subtitle: ''
       text: |-
         {{< spoiler text="2024" >}}
-          July 3: Awarded as Outstanding Graduate of Beijing"
-          ![Outstanding Graduate of Beijing](Outstanding_Graduate_of_Beijing.jpg)
+          July 3: Awarded as Outstanding Graduate of Beijing
+          ![Outstanding Graduate of Beijing](Outstanding_Graduate_of_Beijing.png)
         {{</spoiler >}}
         {{< spoiler text="2022">}}
         {{</spoiler >}}
     design:
       # Reduce spacing
       spacing:
-        padding: ['20px', '0', '0', '0']
+        padding: ['0', '0', '0', '0']
   - block: collection
     id: papers
     content:

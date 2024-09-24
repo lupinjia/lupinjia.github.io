@@ -123,6 +123,6 @@ education:
 
 ## About Me
 
-I am currently a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.
+**I am currently a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.**
 
 
