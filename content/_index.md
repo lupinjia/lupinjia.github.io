@@ -38,7 +38,7 @@ sections:
       text: |-
       {{< spoiler text="2024" >}}
         {{< spoiler text="July 3: Awarded as Outstanding Graduate of Beijing" >}}
-          ![Outstanding Graduate of Beijing](../assets/img/Outstanding%20Graduate%20of%20Beijing.png)
+          ![Outstanding Graduate of Beijing](../assets/img/Outstanding_Graduate_of_Beijing.png)
         {{</spoiler >}}
       {{</spoiler >}}
       {{< spoiler text="2022">}}
@@ -46,7 +46,7 @@ sections:
     design:
       # Reduce spacing
       spacing:
-        padding: ['20px', 0, 0, 0]
+        padding: ['20px', '0', '0', '0']
   - block: collection
     id: papers
     content:
