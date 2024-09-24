@@ -36,12 +36,12 @@ sections:
       title: News
       subtitle: ''
       text: |-
-      {{< spoiler text="2024" >}}
-      July 3: Awarded as Outstanding Graduate of Beijing"
-      ![Outstanding Graduate of Beijing](Outstanding_Graduate_of_Beijing.jpg)
-      {{</spoiler >}}
-      {{< spoiler text="2022">}}
-      {{</spoiler >}}
+        {{< spoiler text="2024" >}}
+          July 3: Awarded as Outstanding Graduate of Beijing"
+          ![Outstanding Graduate of Beijing](Outstanding_Graduate_of_Beijing.jpg)
+        {{</spoiler >}}
+        {{< spoiler text="2022">}}
+        {{</spoiler >}}
     design:
       # Reduce spacing
       spacing:
