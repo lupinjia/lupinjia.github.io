@@ -19,54 +19,60 @@ sections:
       #   text: Download CV
       #   url: uploads/resume.pdf
     design:
-      css_class: dark
       background:
-        color: dark
-        image:
-          # Add your image background to `assets/media/`.
-          filename: gradient_background.jpg
-          filters:
-            brightness: 0.6
-          size: cover
-          position: center
-          parallax: false
-  - block: hero
+        color: DarkSlateGray
+        text_color_light: true
+  - block: collection
     id: news
     content:
-      title: News
+      title: Recent News
       subtitle: ''
-      text: |-
-        {{< spoiler text="2024" >}}
-          July 3: Awarded as Outstanding Graduate of Beijing
-          ![Outstanding Graduate of Beijing](Outstanding_Graduate_of_Beijing.png)
-        {{</spoiler >}}
-        {{< spoiler text="2022">}}
-        {{</spoiler >}}
-    design:
-      # Reduce spacing
-      spacing:
-        padding: ['0', '0', '0', '0']
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
+      text: ''
+      # Page type to display. E.g. post, talk, publication...
+      page_type: post
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 5
+      # Filter on criteria
       filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ""
-      filters:
-        folders:
-          - publication
+        author: ""
+        category: ""
+        tag: ""
         exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
     design:
-      view: citation
+      # Choose a layout view
+      view: date-title-summary
+      # add spacing
+      spacing:
+        padding: [100px, 0, 0, 0]
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publication
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
+  
+  # - block: collection
+  #   content:
+  #     title: Recent Publications
+  #     text: ""
+  #     filters:
+  #       folders:
+  #         - publication
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
   
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
