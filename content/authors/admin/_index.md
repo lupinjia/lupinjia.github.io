@@ -39,7 +39,7 @@ profiles:
 interests:
   - Artificial Intelligence
   - Robot Learning
-  - DIY
+  - Enabling animal-like behaviors on robots
 
 education:
   - area: BSc Mechatronical Engineering
