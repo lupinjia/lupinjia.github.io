@@ -47,7 +47,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: './105.pdf'
+url_pdf: 'uploads/Effects_of_Prior_Knowledge_for_Stair_Climbing_of_Bipedal_Robots_Based_on_Reinforcement_Learning.pdf'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
