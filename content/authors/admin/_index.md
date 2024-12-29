@@ -73,6 +73,9 @@ skills:
       - name: Distance Running
         description: '5k, 10k, half marathon'
         icon: person-simple-walk
+      - name: J-POP
+        description: 'milet, aimer, anime songs'
+        icon: hero/musical-note
 
 # languages:
 #   - name: English(Tofel)
