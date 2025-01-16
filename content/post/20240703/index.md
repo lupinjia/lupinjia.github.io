@@ -10,6 +10,8 @@ tags:
   - Honor
 ---
 
+非常荣幸获得了2024年北京理工大学优秀本科毕业生及北京市优秀本科毕业生的荣誉。BIT的本科四年见证了我的成长，感谢一路上遇到的老师和同学。
+
 ![Outstanding Graduate of Beijing](Outstanding_Graduate_of_Beijing.png)
 
 ![Outstanding Graduate of BIT](Outstanding_Graduate_of_BIT.jpg)
