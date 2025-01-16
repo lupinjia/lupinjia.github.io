@@ -1,7 +1,7 @@
 ---
 title: Happy to accomplish my first University Hundred Mile Marathon Relay!
 summary: Four years of running, for this only goal. 
-date: 2024-12-18
+date: 2023-12-18
 
 authors:
   - admin
