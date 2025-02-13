@@ -37,7 +37,7 @@ profiles:
     url: https://github.com/lupinjia
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=jimch4UAAAAJ
-  - icon: custom/bilibili
+  - icon: bilibili
     url: https://space.bilibili.com/629226459?spm_id_from=333.1007.0.0
 
 interests:
