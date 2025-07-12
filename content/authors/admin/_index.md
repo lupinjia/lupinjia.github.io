@@ -2,8 +2,8 @@
 # Display name
 title: YasenJia
 
-# Name pronunciation (optional)
-name_pronunciation: arson ka
+# # Name pronunciation (optional)
+# name_pronunciation: arson ka
 
 # Full name (for SEO)
 first_name: Yasen
