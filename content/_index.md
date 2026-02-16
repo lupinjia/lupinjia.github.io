@@ -15,9 +15,9 @@ sections:
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/yasenjia_cv.pdf
+      # button:
+      #   text: Download CV
+      #   url: uploads/yasenjia_cv.pdf
     design:
       background:
         color: DarkSlateGray
