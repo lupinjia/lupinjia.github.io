@@ -1,6 +1,6 @@
 ---
 title: LeggedGym-Ex
-date: 2024-12-23
+date: 2026-02-16
 links:
   - type: site
     url: https://github.com/lupinjia/LeggedGym-Ex
@@ -17,7 +17,8 @@ A [legged_gym](https://github.com/leggedrobotics/legged_gym) based framework for
 
 This project inherits legged_gym's framework and brings it to various latest simulators. For those who are familiar with legged_gym, it is easy to use this framework.
 
-Demo video:
+## Demo video
 
-{{</* video src="20260216_LeggedGym-Ex_release.mp4" controls="true" */>}}
+{{< video src="videos/20260216_LeggedGym-Ex_release.mp4" controls="yes" >}}
+
 <!--more-->

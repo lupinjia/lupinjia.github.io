@@ -91,9 +91,13 @@ awards:
   - title: Outstanding Graduate of BIT and Beijing (2024, Bachelor)
     url: https://lupinjia.github.io/post/20240703/
     date: '2024-07-03'
-    awarder: Beijing Institute of Technology, Beijing
+    awarder: Beijing Institute of Technology, Ministry of Education
     summary: |
       I have been studying at Beijing Institute of Technology for 4 years, thanks for the support from my friends and tutors.
+  - title: Outstanding Trainee and Outstanding Team in TRON Camp 2025
+    url: https://lupinjia.github.io/post/20250819/
+    date: '2025-08-19'
+    awarder: Limx Dynamics
 ---
 
 ## About Me
