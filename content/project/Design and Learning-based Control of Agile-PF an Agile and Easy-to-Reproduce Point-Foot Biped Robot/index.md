@@ -13,6 +13,6 @@ Latest progress in Reinforcement Learning (RL) has spurred growing interest in t
 
 ## Demo Video
 
-{{< video src="videos/agilepf_demo_video.mp4" controls="yes" >}}
+<!-- {{< video src="videos/agilepf_demo_video.mp4" controls="yes" >}} -->
 
 <!--more-->
