@@ -26,8 +26,9 @@ links:
     url: https://github.com/lupinjia
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=jimch4UAAAAJ
-  - icon: bilibili
+  - icon: custom/bilibili
     url: https://space.bilibili.com/629226459?spm_id_from=333.1007.0.0
+    label: Bilibili
 
 interests:
   - Artificial Intelligence
@@ -41,21 +42,15 @@ education:
     end: 2024-06-01
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+  # - role: Senior AI Research Scientist
+  #   org: Meta AI
+  #   start: 2020-01-01
+  #   summary: |
+  #     Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+  #   button:
+  #     text: View portfolio
+  #     url: /
+  #     icon: hero/arrow-down-tray
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
