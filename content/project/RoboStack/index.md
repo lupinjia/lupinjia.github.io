@@ -1,7 +1,9 @@
 ---
 title: RoboStack
 date: 2024-09-22
-external_link: https://lupinjia.github.io/RoboStack/
+links: 
+  - type: site
+    url: https://lupinjia.github.io/RoboStack/
 tags:
   - Site Nav
   - Tools

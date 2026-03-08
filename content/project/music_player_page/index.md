@@ -1,7 +1,9 @@
 ---
 title: music_player_page
 date: 2025-02-13
-external_link: https://github.com/lupinjia/music_player_page
+links: 
+  - type: site
+    url: https://github.com/lupinjia/music_player_page
 tags:
   - Web
   - Music
