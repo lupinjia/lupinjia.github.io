@@ -4,7 +4,7 @@ summary: Four years of running, for this only goal.
 date: 2023-12-18
 
 authors:
-  - admin
+  - me
 
 tags:
   - Experience

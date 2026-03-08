@@ -4,7 +4,7 @@ summary: I accomplished my first custom bipedal robot hardware, which is a point
 date: 2025-07-12
 
 authors:
-  - admin
+  - me
 
 tags:
   - Experience

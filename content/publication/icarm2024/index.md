@@ -6,7 +6,7 @@ title: 'Effects of Prior Knowledge for Stair Climbing of Bipedal Robots Based on
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Mengya Su
-  - admin
+  - me
   - Yan Huang
 
 # Author notes (optional)

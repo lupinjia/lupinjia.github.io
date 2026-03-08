@@ -1,37 +1,26 @@
----
-# Display name
-title: YasenJia
-
-# # Name pronunciation (optional)
-# name_pronunciation: arson ka
-
-# Full name (for SEO)
-first_name: Yasen
-last_name: Jia
-
-# Status emoji
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: YasenJia
+  given: Yasen
+  family: Jia
+  alternate: ''  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+  pronouns: he/him
 status:
-  icon: 🤖
-
-# Is this the primary user of the site?
-superuser: true
-
-# Highlight the author in author lists? (true/false)
-highlight_name: true
-
-# Role/position/tagline
+  icon: "🤖"
 role: Robotics Enthusiast
+bio: |
+  I am currently a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.
 
-# Organizations/Affiliations to display in Biography blox
-organizations:
+affiliations:
   - name: Beijing Institute of Technology
-    url: https://www.bit.edu.cn/
+    url: https://bit.edu.cn/
 
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles:
+links:
   - icon: at-symbol
-    url: 'https://jiayasen021003@gmail.com'
+    url: https://jiayasen021003@gmail.com
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/lupinjia
@@ -43,13 +32,30 @@ profiles:
 interests:
   - Artificial Intelligence
   - Robot Learning
-  - Enabling animal-like behaviors on robots
+  - Robotics
 
 education:
   - area: BSc Mechatronical Engineering
     institution: Beijing Institute of Technology
-    date_start: 2020-09-01
-    date_end: 2024-06-01
+    start: 2020-09-01
+    end: 2024-06-01
+
+experience:
+  - role: Senior AI Research Scientist
+    org: Meta AI
+    start: 2020-01-01
+    summary: |
+      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+    button:
+      text: View portfolio
+      url: /
+      icon: hero/arrow-down-tray
+  - role: AI Research Intern
+    org: OpenAI
+    start: 2019-06-01
+    end: 2019-12-31
+    summary: |
+      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -80,8 +86,12 @@ skills:
         icon: hero/musical-note
 
 # languages:
-#   - name: English(Tofel)
-#     score: 97
+#   - name: English
+#     level: 5
+#     label: Native
+#   - name: Spanish
+#     level: 4
+#     label: Fluent
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -98,10 +108,3 @@ awards:
     url: https://lupinjia.github.io/post/20250819/
     date: '2025-08-19'
     awarder: Limx Dynamics
----
-
-## About Me
-
-**I am currently a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.**
-
-

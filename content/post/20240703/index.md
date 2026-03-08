@@ -4,7 +4,7 @@ summary: I have been studying at Beijing Institute of Technology for 4 years, th
 date: 2024-07-03
 
 authors:
-  - admin
+  - me
 
 tags:
   - Honor

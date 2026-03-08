@@ -4,7 +4,7 @@ summary: I'm honored to attend tron camp 2025 as one of the campers in the first
 date: 2025-08-19
 
 authors:
-  - admin
+  - me
 
 tags:
   - Experience
