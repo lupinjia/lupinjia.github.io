@@ -1,0 +1,105 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: YasenJia
+  given: Yasen
+  family: Jia
+  alternate: ''  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+  pronouns: he/him
+status:
+  icon: "🤖"
+role: Robotics Enthusiast
+bio: |
+  I am currently a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.
+
+affiliations:
+  - name: Beijing Institute of Technology
+    url: https://bit.edu.cn/
+
+links:
+  - icon: at-symbol
+    url: https://jiayasen021003@gmail.com
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/lupinjia
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=jimch4UAAAAJ
+  - icon: custom/bilibili
+    url: https://space.bilibili.com/629226459?spm_id_from=333.1007.0.0
+    label: Bilibili
+
+interests:
+  - Artificial Intelligence
+  - Robot Learning
+  - Robotics
+
+education:
+  - area: BSc Mechatronical Engineering
+    institution: Beijing Institute of Technology
+    start: 2020-09-01
+    end: 2024-06-01
+
+experience:
+  # - role: Senior AI Research Scientist
+  #   org: Meta AI
+  #   start: 2020-01-01
+  #   summary: |
+  #     Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+  #   button:
+  #     text: View portfolio
+  #     url: /
+  #     icon: hero/arrow-down-tray
+
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Skills
+    items:
+      - name: Coding
+        description: 'C, C++, Python, PyTorch, MATLAB, HTML'
+        icon: code-bracket
+      - name: Reinforcement Learning Control
+        description: 'IsaacGym, legged_gym'
+        icon: devicon/pytorch
+      - name: Embedded Systems
+        description: 'stm32, ROS/ROS2, Linux, Wire Welding, Basic PCB design'
+        icon: devicon/embeddedc
+      - name: Languages
+        description: 'English(Tofel 97/120), Chinese'
+        icon: language
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Distance Running
+        description: '5k, 10k, half marathon'
+        icon: person-simple-walk
+      - name: J-POP
+        description: 'milet, aimer, anime songs'
+        icon: hero/musical-note
+
+# languages:
+#   - name: English
+#     level: 5
+#     label: Native
+#   - name: Spanish
+#     level: 4
+#     label: Fluent
+
+# Awards.
+#   Add/remove as many awards below as you like.
+#   Only `title`, `awarder`, and `date` are required.
+#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+awards:
+  - title: Outstanding Graduate of BIT and Beijing (2024, Bachelor)
+    url: https://lupinjia.github.io/post/20240703/
+    date: '2024-07-03'
+    awarder: Beijing Institute of Technology, Ministry of Education
+    summary: |
+      I have been studying at Beijing Institute of Technology for 4 years, thanks for the support from my friends and tutors.
+  - title: Outstanding Trainee and Outstanding Team in TRON Camp 2025
+    url: https://lupinjia.github.io/post/20250819/
+    date: '2025-08-19'
+    awarder: Limx Dynamics
