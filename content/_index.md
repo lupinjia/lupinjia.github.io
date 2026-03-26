@@ -64,6 +64,7 @@ sections:
   #     columns: 2
   
   - block: collection
+    id: papers
     content:
       title: Recent Publications
       text: ""

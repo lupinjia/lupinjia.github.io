@@ -1,0 +1,115 @@
+{{ define "main" }}
+<div class="max-w-7xl mx-auto px-6 py-12">
+  {{/* 页面标题 */}}
+  <header class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+      <p class="text-xl text-gray-600 dark:text-gray-400">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{/* 获取所有博客文章 */}}
+  {{ $posts := where .Site.RegularPages "Type" "blog" }}
+  {{ $posts = $posts.ByDate.Reverse }}
+  
+  {{/* 按年份分组显示 */}}
+  {{ range $posts.GroupByDate "2006" }}
+    <div class="mb-16">
+      {{/* 年份标题 */}}
+      <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8 pb-2 border-b-2 border-gray-200 dark:border-gray-700">
+        {{ .Key }}
+      </h2>
+      
+      {{/* 网格布局的文章卡片 */}}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ range .Pages }}
+          <article class="group flex flex-col h-full">
+            <a href="{{ .RelPermalink }}" class="block h-full bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 overflow-hidden flex flex-col">
+              {{/* 封面图片 */}}
+              <div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-700">
+                {{ if .Params.featured_image }}
+                  <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                {{ else if .Resources.GetMatch "featured*" }}
+                  {{ $image := .Resources.GetMatch "featured*" }}
+                  <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                {{ else }}
+                  <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-600">
+                    <span class="text-white text-5xl">📝</span>
+                  </div>
+                {{ end }}
+                
+                {{/* 私有标记 */}}
+                {{ if .Params.private }}
+                  <div class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
+                    🔒 Private
+                  </div>
+                {{ end }}
+              </div>
+              
+              {{/* 内容区域 */}}
+              <div class="p-6 flex flex-col flex-grow">
+                {{/* 标题 */}}
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+                  {{ .Title }}
+                </h3>
+                
+                {{/* 摘要 */}}
+                <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3 flex-grow">
+                  {{ if .Params.private }}
+                    <span class="italic text-gray-500">🔐 This is a private article. Click to enter password and view content.</span>
+                  {{ else if .Summary }}
+                    {{ .Summary }}
+                  {{ else }}
+                    {{ .Content | plainify | truncate 150 }}
+                  {{ end }}
+                </p>
+                
+                {{/* 底部信息 */}}
+                <div class="pt-4 border-t border-gray-100 dark:border-gray-700">
+                  <div class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                    {{/* 日期 */}}
+                    <time datetime="{{ .Date.Format "2006-01-02" }}" class="flex items-center">
+                      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                      </svg>
+                      {{ .Date.Format "Jan 2" }}
+                    </time>
+                    
+                    {{/* 分类 */}}
+                    {{ with .Params.categories }}
+                      <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                        </svg>
+                        {{ range first 1 . }}{{ . }}{{ end }}
+                      </span>
+                    {{ end }}
+                  </div>
+                  
+                  {{/* 标签 */}}
+                  {{ with .Params.tags }}
+                    <div class="flex flex-wrap gap-2 mt-3">
+                      {{ range first 3 . }}
+                        <span class="text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-2 py-1 rounded-full">#{{ . }}</span>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            </a>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+  
+  {{/* 空状态 */}}
+  {{ if eq (len $posts) 0 }}
+    <div class="text-center py-20">
+      <div class="text-6xl mb-4">📝</div>
+      <h3 class="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-2">No blog posts yet</h3>
+      <p class="text-gray-500">Check back later for new content!</p>
+    </div>
+  {{ end }}
+</div>
+{{ end }}
