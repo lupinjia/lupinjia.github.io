@@ -1,0 +1,101 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-6 py-12">
+  {{/* 页面标题 */}}
+  <header class="text-center mb-10">
+    <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+      <p class="text-xl text-gray-600 dark:text-gray-400">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{/* 搜索框容器 */}}
+  <div class="max-w-3xl mx-auto mb-8">
+    <div id="search" class="relative"></div>
+  </div>
+
+  {{/* 搜索提示 */}}
+  <div class="text-center text-gray-500 dark:text-gray-400 mb-12 text-sm">
+    <p>💡 提示: 可以搜索博客文章、项目、论文等内容</p>
+    <p class="mt-2">支持关键词: 强化学习、机器人、PPO、Genesis 等</p>
+  </div>
+
+  {{/* 快捷分类 */}}
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+    <a href="/blog/" class="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-center hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+      <div class="text-3xl mb-2">📝</div>
+      <div class="font-medium text-gray-800 dark:text-gray-200">博客</div>
+      <div class="text-sm text-gray-500">技术文章与教程</div>
+    </a>
+    <a href="/projects/" class="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg text-center hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
+      <div class="text-3xl mb-2">🚀</div>
+      <div class="font-medium text-gray-800 dark:text-gray-200">项目</div>
+      <div class="text-sm text-gray-500">开源项目展示</div>
+    </a>
+    <a href="/publication/" class="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg text-center hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors">
+      <div class="text-3xl mb-2">📄</div>
+      <div class="font-medium text-gray-800 dark:text-gray-200">论文</div>
+      <div class="text-sm text-gray-500">学术发表</div>
+    </a>
+    <a href="/experience/" class="block p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg text-center hover:bg-orange-100 dark:hover:bg-orange-900/30 transition-colors">
+      <div class="text-3xl mb-2">👤</div>
+      <div class="font-medium text-gray-800 dark:text-gray-200">经历</div>
+      <div class="text-sm text-gray-500">个人简介与经历</div>
+    </a>
+  </div>
+</div>
+
+<script>
+// Pagefind 搜索功能
+(function() {
+  // 检查 Pagefind 是否可用
+  if (typeof PagefindUI === 'undefined') {
+    // 动态加载 Pagefind UI
+    const script = document.createElement('script');
+    script.src = '/pagefind/pagefind-ui.js';
+    script.onload = initPagefind;
+    script.onerror = function() {
+      console.error('Failed to load Pagefind UI');
+      document.getElementById('search').innerHTML = 
+        '<div class="p-4 bg-red-50 text-red-600 rounded">搜索功能加载失败，请刷新页面重试</div>';
+    };
+    document.head.appendChild(script);
+    
+    // 加载样式
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/pagefind/pagefind-ui.css';
+    document.head.appendChild(link);
+  } else {
+    initPagefind();
+  }
+  
+  function initPagefind() {
+    try {
+      new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: false,
+        excerptLength: 15,
+        translations: {
+          placeholder: '搜索全站内容...',
+          clear_search: '清除',
+          load_more: '加载更多结果',
+          search_label: '搜索',
+          filters_label: '筛选',
+          zero_results: '没有找到 [SEARCH_TERM] 的相关结果',
+          many_results: '找到 [COUNT] 个 [SEARCH_TERM] 的结果',
+          one_result: '找到 1 个 [SEARCH_TERM] 的结果',
+          alt_search: '没有找到 [SEARCH_TERM] 的结果。显示 [DIFFERENCE] 个 [ALTERED_TERM] 的结果',
+          search_suggestion: '没有找到 [SEARCH_TERM] 的结果。您是想搜索：',
+          searching: '搜索 [SEARCH_TERM]...'
+        }
+      });
+    } catch (e) {
+      console.error('Pagefind initialization error:', e);
+      document.getElementById('search').innerHTML = 
+        '<div class="p-4 bg-yellow-50 text-yellow-600 rounded">搜索功能初始化失败</div>';
+    }
+  }
+})();
+</script>
+{{ end }}
