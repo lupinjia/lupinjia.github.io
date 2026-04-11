@@ -10,9 +10,9 @@ authors:
   - Yan Huang
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+# author_notes:
+#   - 'Equal contribution'
+#   - 'Equal contribution'
 
 date: '2024-10-18T00:00:00Z'
 doi: '10.1109/ICARM62033.2024.10715938'

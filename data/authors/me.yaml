@@ -12,7 +12,8 @@ status:
   icon: "🤖"
 role: Robotics Enthusiast
 bio: |
-  I am currently a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.
+  I am a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.
+  I am currently working as an algorithm engineering intern (Legged Robot Motion Control) in Xiaomi.
 
 affiliations:
   - name: Beijing Institute of Technology
@@ -42,15 +43,15 @@ education:
     end: 2024-06-01
 
 experience:
-  # - role: Senior AI Research Scientist
-  #   org: Meta AI
-  #   start: 2020-01-01
-  #   summary: |
-  #     Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-  #   button:
-  #     text: View portfolio
-  #     url: /
-  #     icon: hero/arrow-down-tray
+  - role: Algorithm Engineer Intern (Legged Robot Motion Control)
+    org: Xiaomi
+    start: 2026-04-07
+    summary: |
+      None
+    # button:
+    #   text: View portfolio
+    #   url: /
+    #   icon: hero/arrow-down-tray
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
