@@ -13,7 +13,6 @@ status:
 role: Robotics Enthusiast
 bio: |
   I am a graduate student of BIT(Beijing Institute of Technology, China), majoring in Intelligent Robot and System, supervised by [Prof.Yan Huang](https://smen.bit.edu.cn/szdw/szml/znjqryjs/qb08/49135f36d043414b8210855c1622822e.htm). Before that, I received my bachelor's degree in Mechatronical Engineering from BIT.
-  I am currently working as an algorithm engineering intern (Legged Robot Motion Control) in Xiaomi.
 
 affiliations:
   - name: Beijing Institute of Technology
@@ -46,12 +45,14 @@ experience:
   - role: Algorithm Engineer Intern (Legged Robot Motion Control)
     org: Xiaomi
     start: 2026-04-07
+    end: 2026-07-23
     summary: |
-      None
-    # button:
-    #   text: View portfolio
-    #   url: /
-    #   icon: hero/arrow-down-tray
+      My work here is fourfold, including 1) Migrate the RL training framework from isaacgym to mjlab, 2) Conduct system identification in the 28 DOF humanoid robot using CMA-ES, 
+      3) Improve AMP walking policy (validated on the real robot), 4) Develop depth-image based perceptive locomotion policy (validated only in Mujoco Simulation).
+    button:
+      text: View Details
+      url: /post/20260724/
+      # icon: hero/arrow-down-tray
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
