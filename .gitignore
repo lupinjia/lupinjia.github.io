@@ -3,3 +3,4 @@ resources/
 hugo_stats.json
 public/
 go.sum
+node_modules/

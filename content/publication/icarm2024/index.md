@@ -15,7 +15,9 @@ authors:
 #   - 'Equal contribution'
 
 date: '2024-10-18T00:00:00Z'
-doi: '10.1109/ICARM62033.2024.10715938'
+hugoblox:
+  ids:
+    doi: '10.1109/ICARM62033.2024.10715938'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2024-10-31T00:00:00Z'
@@ -43,11 +45,9 @@ tags:
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
-
-url_pdf: 'uploads/Effects_of_Prior_Knowledge_for_Stair_Climbing_of_Bipedal_Robots_Based_on_Reinforcement_Learning.pdf'
+links:
+- type: pdf
+  url: 'uploads/Effects_of_Prior_Knowledge_for_Stair_Climbing_of_Bipedal_Robots_Based_on_Reinforcement_Learning.pdf'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''

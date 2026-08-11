@@ -43,11 +43,9 @@ tags:
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
-
-url_pdf: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6435084'
+links:
+- type: pdf
+  url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6435084'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''

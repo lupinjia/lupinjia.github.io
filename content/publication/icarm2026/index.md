@@ -43,11 +43,9 @@ tags:
 featured: false
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
-
-url_pdf: 'uploads/20250530_ICARM_final.pdf'
+links:
+- type: pdf
+  url: 'uploads/20250530_ICARM_final.pdf'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
