@@ -36,10 +36,14 @@ interests:
   - Robotics
 
 education:
-  - area: BSc Mechatronical Engineering
+  - area: BEng Mechatronical Engineering
     institution: Beijing Institute of Technology
     start: 2020-09-01
     end: 2024-06-01
+  - area: MEng Mechanical Engineering (Intelligent Robot and System)
+    institution: Beijing Institute of Technology
+    start: 2024-09-01
+    end: 2027-06-01
 
 experience:
   - role: Algorithm Engineer Intern (Legged Robot Motion Control)
