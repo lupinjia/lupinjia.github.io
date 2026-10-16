@@ -14,11 +14,11 @@ authors:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2026-03-18T00:00:00Z'
+date: '2026-10-16T00:00:00Z'
 # doi: '10.1109/ICARM62033.2024.10715938'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2026-03-18T00:00:00Z'
+publishDate: '2026-10-16T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -26,8 +26,8 @@ publishDate: '2026-03-18T00:00:00Z'
 publication_types: ['journal']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2024 International Conference on Advanced Robotics and Mechatronics (ICARM)*
-publication_short: In *SSRN Library*
+publication: In *Robotics and Autonomous Systems (RAS)*
+publication_short: In *RAS*
 
 abstract: Latest progress in Reinforcement Learning (RL) has spurred growing interest in the development of biped robots. Multiple human-size and small-scale biped robots have demonstrated outstanding locomotion performance. However, they mostly employ custom control boards and actuators or possess complicated architectures, raising the threshold of reproduction for beginner-level enthusiasts in the field of robotics. Biped robots that are easy to reproduce can help accelerate related research and provide accessible platforms for education and benchmarking. In this paper, we develop a smallscale Agile Point-Foot biped robot (Agile-PF) with strong reproducibility. The design emphasizes low-cost and commercially available components and thus reduces the barrier to robot system development. Additionally, we propose an RL-based training framework that incorporates hybrid dynamics representation and sim-to-real alignment techniques. With policies trained via this framework, the robot demonstrates remarkable capabilities, including high-speed running, traversing diverse terrains, pushing recovery, and load-bearing performance.
 
@@ -45,7 +45,7 @@ featured: false
 # Custom links (uncomment lines below)
 links:
 - type: pdf
-  url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6435084'
+  url: 'uploads/20260807_RAS'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''

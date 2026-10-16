@@ -57,6 +57,15 @@ experience:
       text: View Details
       url: /post/20260724/
       # icon: hero/arrow-down-tray
+  - role: Algorithm Engineer Intern
+    org: Phybot
+    start: 2026-08-27
+    end: now
+    summary: |
+      My work here includes 1) Refine original AMP framework to alleviate mode collapse problem and integrate multiple styles into one policy.
+    button:
+      text: View Details
+      url: /project/humanoid-perceptive-locomotion/
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
