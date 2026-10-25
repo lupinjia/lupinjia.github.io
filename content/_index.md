@@ -14,10 +14,10 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ""
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: 下载简历
-        url: uploads/贾亚森_简历.pdf
+      # # Show a call-to-action button under your biography? (optional)
+      # button:
+      #   text: 下载简历
+      #   url: uploads/贾亚森_简历.pdf
     design:
       background:
         color: DarkSlateGray
