@@ -15,7 +15,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2026-10-16T00:00:00Z'
-# doi: '10.1109/ICARM62033.2024.10715938'
+doi: '10.1016/j.robot.2026.105809'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2026-10-16T00:00:00Z'
@@ -46,7 +46,7 @@ featured: false
 links:
 - type: pdf
   url: 'uploads/20260807_RAS'
-# url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: 'https://github.com/lupinjia/agilepf'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''
