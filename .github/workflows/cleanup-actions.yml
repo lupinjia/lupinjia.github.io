@@ -1,0 +1,105 @@
+name: Cleanup old workflow runs and artifacts
+
+on:
+  schedule:
+    # 每月 1 日和 16 日 00:00 UTC 运行，约每 15 天一次
+    - cron: '0 0 1,16 * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only log what would be deleted'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: cleanup-actions
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Keep the latest runs and delete the rest
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          KEEP_RUNS: '3'
+        run: |
+          set -euo pipefail
+
+          REPO="${GITHUB_REPOSITORY:?GITHUB_REPOSITORY is required}"
+          KEEP_RUNS="${KEEP_RUNS:-3}"
+          DRY_RUN="${DRY_RUN:-false}"
+
+          # Run IDs that must be kept; artifacts belonging to these runs are kept too.
+          declare -A KEPT_RUNS=()
+
+          workflows="$(gh api --paginate "repos/${REPO}/actions/workflows" \
+            --jq '.workflows[] | [.id, .path] | @tsv')"
+
+          while IFS=$'\t' read -r workflow_id workflow_path; do
+            [ -n "${workflow_id:-}" ] || continue
+
+            echo "::group::Workflow ${workflow_path} (id=${workflow_id})"
+
+            mapfile -t runs < <(
+              gh api --paginate \
+                "repos/${REPO}/actions/workflows/${workflow_id}/runs?per_page=100" \
+                --jq '.workflow_runs[] | [.id, .status] | @tsv'
+            )
+
+            total="${#runs[@]}"
+            echo "Found ${total} run(s); keeping the newest ${KEEP_RUNS}."
+
+            for ((i = 0; i < total; i++)); do
+              IFS=$'\t' read -r run_id run_status <<< "${runs[$i]}"
+
+              # Keep the newest N runs, plus any run that is still in progress.
+              if (( i < KEEP_RUNS )) || [ "${run_status}" != "completed" ]; then
+                KEPT_RUNS["${run_id}"]=1
+                continue
+              fi
+
+              if [ "${DRY_RUN}" = "true" ]; then
+                echo "[dry-run] Would delete workflow run ${run_id}"
+              else
+                echo "Deleting workflow run ${run_id}"
+                gh api -X DELETE "repos/${REPO}/actions/runs/${run_id}" >/dev/null \
+                  || echo "::warning::Failed to delete workflow run ${run_id}"
+              fi
+            done
+
+            echo "::endgroup::"
+          done <<< "${workflows}"
+
+          echo "::group::Artifacts"
+
+          artifacts="$(
+            gh api --paginate "repos/${REPO}/actions/artifacts?per_page=100" \
+              --jq '.artifacts[] | [.id, (.workflow_run.id // 0), .name] | @tsv'
+          )"
+
+          while IFS=$'\t' read -r artifact_id run_id artifact_name; do
+            [ -n "${artifact_id:-}" ] || continue
+
+            # Keep artifacts that belong to a kept run.
+            if [ -n "${KEPT_RUNS[${run_id}]+x}" ]; then
+              continue
+            fi
+
+            if [ "${DRY_RUN}" = "true" ]; then
+              echo "[dry-run] Would delete artifact ${artifact_id} (${artifact_name}) from run ${run_id}"
+            else
+              echo "Deleting artifact ${artifact_id} (${artifact_name}) from run ${run_id}"
+              gh api -X DELETE "repos/${REPO}/actions/artifacts/${artifact_id}" >/dev/null \
+                || echo "::warning::Failed to delete artifact ${artifact_id}"
+            fi
+          done <<< "${artifacts}"
+
+          echo "::endgroup::"
