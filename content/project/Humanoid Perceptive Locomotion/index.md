@@ -13,6 +13,6 @@ Train a humanoid robot perceptive locomotion policy using RL. The end-to-end pol
 
 ## Demo Video
 
-{{< video src="videos/phybot_c2_stairs_1.mp4" controls="yes" >}}
+{{< video src="http://video-upyun-lupinjia.test.upcdn.net/phybot/20261106_phybot_c2_stairs_run.mp4" controls="yes" >}}
 
 <!--more-->
