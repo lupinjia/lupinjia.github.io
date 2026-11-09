@@ -11,6 +11,11 @@ tags:
 
 Train a humanoid robot perceptive locomotion policy using RL. The end-to-end policy receives depth image and proprioceptive observation as input and outputs desired joint angles.
 
-## [Demo Video](http://video.jiayasen.top/videos/phybot/20261106_phybot_c2_stairs_run.mp4)
+Contributions:
+1. Improvement of AMP (Adversarial Motion Priors) for multiple styles of locomotion in one policy (walking, ascending/descending, running, crossing gaps).
+
+## Demo Video
+
+{{< video src="http://video.jiayasen.top/videos/phybot/20261106_phybot_c2_stairs_run.mp4" controls="yes" >}}
 
 <!--more-->
