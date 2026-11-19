@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /project/robostack/
 title: RoboStack
 date: 2024-09-22
 links: 

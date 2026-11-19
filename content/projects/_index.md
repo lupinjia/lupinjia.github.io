@@ -1,7 +1,9 @@
 ---
 title: 'Projects'
-date: 2024-09-22
+date: 2024-05-19
 type: landing
+aliases:
+  - /project/
 
 design:
   # Section spacing
@@ -15,9 +17,13 @@ sections:
       text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
       filters:
         folders:
-          - project
+          - projects
+      count: 0
     design:
       view: article-grid
-      fill_image: true
-      columns: 2
+      fill_image: false
+      columns: 3
+      show_date: false
+      show_read_time: false
+      show_read_more: false
 ---

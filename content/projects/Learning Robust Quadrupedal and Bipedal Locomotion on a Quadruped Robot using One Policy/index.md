@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /project/learning-robust-quadrupedal-and-bipedal-locomotion-on-a-quadruped-robot-using-one-policy/
 title: Learning Robust Quadrupedal and Bipedal Locomotion on a Quadruped Robot using One Policy
 date: 2026-03-03
 tags:

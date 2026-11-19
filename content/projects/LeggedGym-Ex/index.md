@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /project/leggedgym-ex/
 title: LeggedGym-Ex
 date: 2026-02-16
 links:

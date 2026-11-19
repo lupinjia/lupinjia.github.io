@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /project/humanoid-perceptive-locomotion/
 title: Humanoid Perceptive Locomotion
 date: 2026-09-21
 tags:

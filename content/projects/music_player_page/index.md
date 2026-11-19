@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /project/music_player_page/
 title: music_player_page
 date: 2025-02-13
 links: 

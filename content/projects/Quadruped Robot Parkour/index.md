@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /project/quadruped-robot-parkour/
 title: Quadruped Robot Parkour
 date: 2026-03-16
 tags:

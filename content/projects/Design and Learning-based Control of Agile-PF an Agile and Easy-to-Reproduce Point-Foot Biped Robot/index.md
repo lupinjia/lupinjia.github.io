@@ -1,4 +1,6 @@
 ---
+aliases:
+  - /project/design-and-learning-based-control-of-agile-pf-an-agile-and-easy-to-reproduce-point-foot-biped-robot/
 title: Design and Learning-based Control of Agile-PF： an Agile and Easy-to-Reproduce Point-Foot Biped Robot
 date: 2026-03-03
 tags:
