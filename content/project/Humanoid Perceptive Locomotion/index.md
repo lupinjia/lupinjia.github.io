@@ -16,6 +16,6 @@ Contributions:
 
 ## Demo Video
 
-{{< video src="http://video.jiayasen.top/videos/phybot/20261106_phybot_c2_stairs_run.mp4" controls="yes" >}}
+{{< video src="http://asset.jiayasen.top/assets/projects/phybot/20261106_phybot_c2_stairs_run.mp4" controls="yes" >}}
 
 <!--more-->

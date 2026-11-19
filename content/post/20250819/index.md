@@ -15,9 +15,9 @@ Tron Camp 2025 requires participators to accomplish the locomotion control of a 
 I designed a controller for the biped robot to cross stairs, grassland, pebble road and discrete obstacles stably and pass through the height restriction bar successfully. The controller is composed of two policy-estimator sets, one for uneven terrain and the other for base height variation on the flat ground. 
 
 Here is the demo video for the biped robot crossing terrains: 
-{{< video src="videos/tron_camp_2025.mp4" controls="yes" >}}
+{{< video src="https://asset.jiayasen.top/assets/projects/2025_tron_camp/tron_camp_2025.mp4" controls="yes" >}}
 
-![](./group_photo_day1.jpeg)
-![](./outstanding_team.jpeg)
-![](./outstanding_trainee.jpeg)
-![](./dji_skycity.jpg)
+![](https://asset.jiayasen.top/assets/projects/2025_tron_camp/group_photo_day1.jpeg)
+![](https://asset.jiayasen.top/assets/projects/2025_tron_camp/outstanding_team.jpeg)
+![](https://asset.jiayasen.top/assets/projects/2025_tron_camp/outstanding_trainee.jpeg)
+![](https://asset.jiayasen.top/assets/projects/2025_tron_camp/dji_skycity.jpg)

@@ -45,7 +45,7 @@ featured: false
 # Custom links (uncomment lines below)
 links:
 - type: pdf
-  url: 'uploads/20261010_ICARM.pdf'
+  url: 'https://asset.jiayasen.top/assets/projects/unitree_go2/20261010_ICARM.pdf'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''

@@ -14,7 +14,7 @@ Locomotion is an essential ability for legged robots to be applied in various co
 
 ## Demo Video
 
-{{< video src="videos/ICARM_video_17M.mp4" controls="yes" >}}
+{{< video src="https://asset.jiayasen.top/assets/projects/icarm2024/ICARM_video_17M.mp4" controls="yes" >}}
 
 ## Award
 

@@ -19,6 +19,6 @@ This project inherits legged_gym's framework and brings it to various latest sim
 
 ## Demo video
 
-{{< video src="videos/20260216_LeggedGym-Ex_release.mp4" controls="yes" >}}
+{{< video src="https://asset.jiayasen.top/assets/projects/legged_gym_ex/20260216_LeggedGym-Ex_release.mp4" controls="yes" >}}
 
 <!--more-->

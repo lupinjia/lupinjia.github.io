@@ -17,7 +17,7 @@ sections:
       # # Show a call-to-action button under your biography? (optional)
       # button:
       #   text: 下载简历
-      #   url: uploads/贾亚森_简历.pdf
+      #   url: https://asset.jiayasen.top/assets/贾亚森_简历.pdf
     design:
       background:
         color: DarkSlateGray

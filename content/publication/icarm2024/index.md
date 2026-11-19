@@ -47,7 +47,7 @@ featured: false
 # Custom links (uncomment lines below)
 links:
 - type: pdf
-  url: 'uploads/Effects_of_Prior_Knowledge_for_Stair_Climbing_of_Bipedal_Robots_Based_on_Reinforcement_Learning.pdf'
+  url: 'https://asset.jiayasen.top/assets/projects/icarm2024/Effects_of_Prior_Knowledge_for_Stair_Climbing_of_Bipedal_Robots_Based_on_Reinforcement_Learning.pdf'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''

@@ -13,5 +13,5 @@ tags:
 From April 7, I interned in the Xiaomi Robot Division for over three months, until July 23. I was very happy to have met such great colleagues here—Yinghao, Zebang, Xiyu, and the other fellow interns.
 
 Here are the demo videos for the humanoid robot walking and crossing terrains (Due to confidentiality requirements, the video has been redacted.): 
-{{< video src="videos/xiaomi_amp_mujoco_demo_redacted.mp4" controls="yes" >}}
-{{< video src="videos/xiaomi_amp_depth_stairs_redacted.mp4" controls="yes" >}}
+{{< video src="https://asset.jiayasen.top/assets/projects/2026_xiaomi_intern/xiaomi_amp_mujoco_demo_redacted.mp4" controls="yes" >}}
+{{< video src="https://asset.jiayasen.top/assets/projects/2026_xiaomi_intern/xiaomi_amp_depth_stairs_redacted.mp4" controls="yes" >}}

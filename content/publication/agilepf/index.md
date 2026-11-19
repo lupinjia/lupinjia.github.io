@@ -45,7 +45,7 @@ featured: false
 # Custom links (uncomment lines below)
 links:
 - type: pdf
-  url: 'uploads/20260807_RAS'
+  url: 'https://asset.jiayasen.top/assets/projects/agilepf/20260807_RAS.pdf'
 url_code: 'https://github.com/lupinjia/agilepf'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
