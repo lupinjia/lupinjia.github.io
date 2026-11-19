@@ -7,7 +7,9 @@
 - Site settings are in `config/_default/`; author profiles are in `data/authors/`. Custom templates are in `layouts/` and assets in `assets/` (both are mounted through `config/_default/module.yaml`).
 - `layouts/blog/list.html` and `layouts/search/list.html` depend on Pagefind's generated `/pagefind/` assets.
 - Landing pages use `type: landing` + `sections[].block: collection`. A collection block silently defaults to `content.count: 5`; set `count: 0` to show every match. Its "See all" link appears only when `count` exceeds the limit and resolves to the section page, so keep the landing page's `count` and the target section `_index.md` in sync.
-- The projects folder was renamed from `content/project/` to `content/projects/`; each page keeps an `aliases` entry for its old `/project/<slug>/` URL. `disableAliases` must stay `false` for those redirects to work on GitHub Pages (Netlify additionally reads them from `_redirects`).
+- `layouts/_partials/functions/build_links.html` is a **local full copy** of the HugoBlox `blox@v0.12.0` partial because upstream hardcodes `site.GetPage "project/<name>"` for publication→project links. Our copy looks in `projects/` first, then `project/`, and emits a build warning for unresolvable names. When bumping the blox module, re-copy the upstream file and re-apply that patch (marked `LOCAL OVERRIDE` in the file).
+- A publication's `projects: [...]` entries must be the **folder names** under `content/projects/` (e.g. `RoboStack`), not the page titles — the lookup is path-based, so a title mismatch silently drops the link (now warned at build time).
+- Every project page (and the section page) keeps an `aliases` entry for its old `/project/...` URL. `disableAliases` must stay `false` for those redirect pages to exist on GitHub Pages (Netlify additionally reads them from `_redirects`).
 
 ## Build and verify
 
