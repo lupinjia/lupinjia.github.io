@@ -19,4 +19,6 @@ The Unitree Go2 with trained policy can climb up 0.5m platform and jump across 0
 
 {{< video src="https://asset.jiayasen.top/assets/projects/unitree_go2/go2_parkour_mjlab_no_cable.mp4" controls="yes" >}}
 
+{{< video src="https://asset.jiayasen.top/assets/projects/unitree_go2/20261125_quick_parkour.mp4" controls="yes" >}}
+
 <!--more-->
